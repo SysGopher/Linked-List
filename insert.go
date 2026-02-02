@@ -16,3 +16,17 @@ func (ll *LinkedList) insertStartAndEnd(value int){
 	current.next = newNode
 }
 
+
+func (ll *LinkedList) insertSpecificPosition(afterValue, newValue int){
+	current := ll.head
+	for current != nil && current.data != afterValue{
+		current = current.next
+
+	}
+
+	if current != nil{
+		newNode := &Node{data :newValue}
+		newNode.next = current.next
+		current.next = newNode
+	}
+}

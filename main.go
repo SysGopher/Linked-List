@@ -17,6 +17,6 @@ func main(){
 	for _, num := range numbers {
 		myList.insertStartAndEnd(num)
 	}
-	
+	myList.insertSpecificPosition(20, 30)
 	myList.Traverse()
 }

@@ -18,5 +18,6 @@ func main(){
 		myList.insertStartAndEnd(num)
 	}
 	myList.insertSpecificPosition(20, 30)
+	myList.delete(10)
 	myList.Traverse()
 }

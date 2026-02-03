@@ -1,5 +1,7 @@
 package main
 
+
+
 type Node struct{
 	data int
 	next *Node
@@ -12,12 +14,15 @@ type LinkedList struct{
 
 func main(){
 	myList := LinkedList{}
-    numbers := []int{10,20,40,50}
+    numbers := []int{10, 20, 30}
 
 	for _, num := range numbers {
 		myList.insertStartAndEnd(num)
 	}
-	myList.insertSpecificPosition(20, 30)
-	myList.delete(10)
-	myList.Traverse()
+	//myList.insertSpecificPosition()
+	//myList.delete(10)
+	myList.Reverse()
+    myList.Traverse()
+
+	
 }
